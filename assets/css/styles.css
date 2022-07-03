@@ -250,48 +250,15 @@ header .container .col-md-7 p {
   padding: 1em 0.5em;
 }
 
-/* Section 3 */
-
-.section-3 {
-  height: 70vmin;
-  margin-top: 15vmin;
-  background: var(--bggradient);
-}
-
-.section-3 .col-md-12>h1 {
-  padding: 2em 0 0.5em 0;
-  color: whitesmoke;
-  font-size: 6vmin;
-}
-
-.section-3 .col-md-12>p {
-  padding: 0 4em;
-  padding-bottom: 2em;
-  color: var(--light-gray);
-  font-size: 3vmin;
-}
-
-.section-3 .desktop {
-  background: white;
-  display: inline-block;
-  border-radius: 3em;
-  padding: 2vmin 4.5vmin;
-  margin: 1em;
-}
-
-.section-3 .desktop h3 {
-  font-size: 4vmin;
-}
-
-.section-3 .desktop p {
-  font-size: 2vmin;
-}
-
 /* Section Team */
 
 .section-4 .container h1 {
   font-size: 6vmin;
   padding-top: 14vmin;
+}
+
+.section-4 .container p {
+  font-size: 2.5vmin;
 }
 
 .section-4 .team {
