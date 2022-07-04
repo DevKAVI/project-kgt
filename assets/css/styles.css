@@ -102,7 +102,7 @@ header .container .col-md-7 p {
   font-weight: bold;
 }
 
-/********** section 1 **************/
+/****** Section 1 - About ******/
 
 .section-1 {
   padding: 20vmin 0vmin;
@@ -138,16 +138,16 @@ header .container .col-md-7 p {
 }
 
 .section-1 .row .col-md-6 .panel p {
-  font-size: 0.9em;
+  font-size: 1.1em;
   color: rgba(0, 0, 0, 0.5);
 }
 
-/*  Section 2  */
+/****** Section 2 - Statistics ******/
 
 .cover {
   width: 100%;
   height: 55vmin;
-  background: url("../assets/pexels-photo-452738.jpeg");
+  background: url("../img/pexels-photo-452738.jpeg");
   background-position: -24rem -19rem;
   background-size: 150%;
   position: relative;
@@ -206,6 +206,32 @@ header .container .col-md-7 p {
   font-family: var(--Patua);
 }
 
+/****** Section 3 - Services ******/
+
+.section-3 {
+  background: var(--bggradient-reverse);
+}
+
+.section-3 .content {
+  width: 100%;
+  height: 100%;
+  padding-top: 19vmin;
+}
+
+.section-3 .content>h1 {
+  font-family: var(--Patua);
+  font-size: 6vmin;
+  color: white;
+}
+
+.section-3 .content>p {
+  font-family: var(--Rubik);
+  font-size: 2vmin;
+  color: white;
+}
+
+/****** Section 4 - Pricing ******/
+
 .purchase>h1 {
   padding-top: 15vmin;
   padding-bottom: 0.1em;
@@ -229,7 +255,7 @@ header .container .col-md-7 p {
 }
 
 .cards .title {
-  background: rgba(208, 241, 241, 0.199);
+  background: rgba(35, 59, 136, 0.199);
   padding: 1.4em 2.5em;
   font-size: 2vmin;
 }
@@ -240,7 +266,7 @@ header .container .col-md-7 p {
 }
 
 .card-body .pricing {
-  background: rgba(208, 241, 241, 0.199);
+  background: rgba(157, 175, 235, 0.199);
   border-top-right-radius: 170px;
   border-top-left-radius: 170px;
 }
@@ -250,35 +276,35 @@ header .container .col-md-7 p {
   padding: 1em 0.5em;
 }
 
-/* Section Team */
+/****** Section 4 - Reviews ******/
 
-.section-4 .container h1 {
+.section-5 .container h1 {
   font-size: 6vmin;
   padding-top: 14vmin;
 }
 
-.section-4 .container p {
+.section-5 .container p {
   font-size: 2.5vmin;
 }
 
-.section-4 .team {
+.section-5 .team {
   padding: 10vmin 4vmin;
 }
 
-.section-4 .card {
+.section-5 .card {
   width: 22em;
   margin-top: 10vmin;
 }
 
-.section-4 .card .card-text {
+.section-5 .card .card-text {
   padding: 0.5em;
 }
 
-.section-4 .card-body>a {
+.section-5 .card-body>a {
   font-size: 1.5em;
 }
 
-.section-4 .carousel-item {
+.section-5 .carousel-item {
   padding-left: 3rem;
 }
 
@@ -286,6 +312,8 @@ header .container .col-md-7 p {
   border-radius: 340px;
   width: 60%;
 }
+
+/****** Footer ******/
 
 footer {
   background: rgba(0, 0, 0, 0.815);
@@ -314,7 +342,71 @@ footer .column i {
   color: rgba(0, 97, 242, 1);
 }
 
-/* It is Adjacent sibling combinator */
+/****** Top Button ******/
+
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  z-index: 99;
+  right: 20px;
+  text-align: center;
+  vertical-align: middle;
+  border: 2px solid transparent;
+  border-color: #fff;
+  border-radius: 0.50rem;
+  padding: 0.375rem 0.75rem;
+  font-size: 18px;
+  background: linear-gradient(135deg, rgba(105, 0, 199, 1) 0%, rgba(0, 97, 242, 1) 100%);
+  color: #fff;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#topBtn span:after {
+  content: "Top";
+}
+
+.animation {
+  transition: 0.3s;
+}
+
+.animation span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+
+.animation span:after {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.3s;
+}
+
+.animation:hover span {
+  padding-right: 40px;
+}
+
+.animation:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.top {
+  visibility: hidden;
+  opacity: 0;
+  transform: translate3d(0, 100%, 0);
+}
+
+.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* NavBar + Java */
 
 footer .column i+i {
   padding: 0 0.5em;

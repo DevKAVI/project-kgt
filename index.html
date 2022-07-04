@@ -22,7 +22,7 @@
     <script src="./assets/js/popper.min.js"></script>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50" class="d-print-none">
+<body class="d-print-none">
 
     <header>
         <div class="container-fluid p-0" id="home">
@@ -43,19 +43,10 @@
                             <a class="nav-link" href="#about">About Me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#features">Statistics</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-expanded="false">Our Services</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Coding</a></li>
-                                <li><a class="dropdown-item" href="#">Promotion</a></li>
-                                <li><a class="dropdown-item" href="#">Technical Support</a></li>
-                            </ul>
+                            <a class="nav-link" href="#services">Our Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#pricing">Our Pricing</a>
+                            <a class="nav-link" href="#pricing">Pricing</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#reviews">Reviews</a>
@@ -64,8 +55,7 @@
                             <a class="nav-link dropdown-toggle" href="#contact" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-expanded="false">Contact Us</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Log In</a></li>
-                                <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                                <li><a class="dropdown-item" href="./sign-up.html">Sign Up</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -73,6 +63,7 @@
             </nav>
         </div>
 
+        <!--Home-->
         <div class="container text-center">
             <div class="row">
                 <div class="col-md-7 col-sm-12 home-text">
@@ -92,6 +83,8 @@
     </header>
 
     <main>
+
+        <!--About-->
         <section class="section-1" id="about">
             <div class="container text-center">
                 <div class="row">
@@ -126,7 +119,9 @@
             </div>
         </section>
 
-        <section class="section-2 container-fluid p-0" id="features">
+
+        <!--Statistics-->
+        <section class="section-2 container-fluid p-0">
             <div class="cover">
                 <div class="overlay"></div>
                 <div class="content text-center">
@@ -156,8 +151,61 @@
                     </div>
                 </div>
             </div>
+        </section>
 
+        <!--Services-->
+        <section class="section-3" id="services">
+            <div class="container">
+                <div class="content text-center">
+                    <h1>What We Offer :</h1>
+                    <p>
+                        We strive to be excellent in everything we do...
+                    </p>
+                </div>
+                <div class="row align-items-center justify-content-center text-white">
+                    <div class="service-text-1 col-md-5">
 
+                        <button type="button" class="btn btn-outline-light mb-3">Coding</button>
+                        <h1>We code.</h1>
+                        <p>
+                            We are professionals who designs and codes software for businesses and consumers alike.
+                            <br />We work closely with our clients to determine what they need.
+                        </p>
+
+                    </div>
+
+                    <div class="service-img-1 col-md-5"><img src="assets/img/coding_.svg" alt="" /></div>
+                    <div class="service-img-2 col-md-5"><img src="assets/img/revenue_.svg" alt="" /></div>
+
+                    <div class="service-text-2 col-md-5">
+
+                        <button type="button " class="btn btn-outline-light mb-3">Marketing</button>
+                        <h1>We promote.</h1>
+                        <p>
+                            We can help you promote your business and products by designing webpages or posters /
+                            banners that will catch the eye of customers all around the globe.
+                        </p>
+
+                    </div>
+
+                    <div class="service-text-3 col-md-5">
+
+                        <button type="button" class="btn btn-outline-light mb-3">Tech Support</button>
+                        <h1>We help.</h1>
+                        <p>
+                            If you are facing any technical issues in your life or in your business, we can help. We
+                            offer 24/7 technical support to our customers on anything they might need.
+                        </p>
+
+                    </div>
+
+                    <div class="service-img-3 col-md-5"><img src="assets/img/marketing.svg" alt="" /></div>
+                </div>
+            </div>
+        </section>
+
+        <!--Pricing-->
+        <section class="section-4 container-fluid p-0">
             <div class="purchase text-center" id="pricing">
                 <h1>Purchase Our Services :</h1>
                 <p>
@@ -213,8 +261,9 @@
             </div>
         </section>
 
-        <!-- Section 4 -->
-        <section class="section-4" id="reviews">
+
+        <!--Reviews-->
+        <section class="section-5" id="reviews">
             <div class="container text-center">
                 <h1 class="text-dark">What Our Customers Say About Us :</h1>
                 <p class="text-secondary">These are reviews which were left by some of our most trusted customers...</p>
@@ -300,6 +349,9 @@
         </section>
     </main>
 
+    <a href="#" class="top animation" id="topBtn"><span class="animation"><i class="bi bi-arrow-bar-up"> </i></span></a>
+
+    <!--Footer-->
     <footer>
         <div class="container-fluid p-0">
             <div class="row text-left">
@@ -341,10 +393,18 @@
         </div>
     </footer>
 
-
+    <!--Java Scripts-->
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/bootstrap.js"></script>
     <script src="./assets/js/main.js"></script>
+
+    <!--TopBtn Script-->
+    <script>
+        window.addEventListener('scroll', function () {
+            var scroll = document.getElementById("topBtn");
+            scroll.classList.toggle("active", window.scrollY > 500);
+        })
+    </script>
 </body>
 
 </html>
