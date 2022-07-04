@@ -46,11 +46,14 @@ section {
 }
 
 header a {
-  font-family: var(--Sniglet-font);
   font-size: 0.9em;
   color: white;
   border-radius: 0.75rem;
   border: none;
+}
+
+header .navbar {
+  text-align: center !important;
 }
 
 header .nav-link:hover {
@@ -68,6 +71,11 @@ header .nav-item {
 
 header .navbar-brand {
   padding-left: 8rem;
+}
+
+header .navbar-brand:hover {
+  text-decoration: underline !important;
+  color: #fff !important;
 }
 
 header .row .col-md-7 {
@@ -178,13 +186,11 @@ header .container .col-md-7 p {
 }
 
 .cover .content>h1 {
-  font-family: var(--Patua);
   font-size: 6vmin;
   color: whitesmoke;
 }
 
 .cover .content>p {
-  font-family: var(--Rubik);
   font-size: 2vmin;
   color: #e5e5e5;
 }
@@ -210,10 +216,6 @@ header .container .col-md-7 p {
   color: rgb(136, 0, 255);
 }
 
-.numbers .rect>p {
-  font-family: var(--Patua);
-}
-
 /****** Section 3 - Services ******/
 
 .section-3 {
@@ -227,13 +229,11 @@ header .container .col-md-7 p {
 }
 
 .section-3 .content>h1 {
-  font-family: var(--Patua);
   font-size: 6vmin;
   color: white;
 }
 
 .section-3 .content>p {
-  font-family: var(--Rubik);
   font-size: 2vmin;
   color: white;
 }
@@ -243,7 +243,6 @@ header .container .col-md-7 p {
 .purchase>h1 {
   padding-top: 15vmin;
   padding-bottom: 0.1em;
-  font-family: var(--Lobster);
 }
 
 .purchase>p {
@@ -350,6 +349,20 @@ footer .column i {
   color: rgba(0, 97, 242, 1);
 }
 
+footer .send:hover {
+  cursor: pointer;
+}
+
+.send span:after {
+  content: "Submit";
+  color: white;
+}
+
+footer .column i+i {
+  padding: 0 0.5em;
+}
+
+
 /****** Top Button ******/
 
 #topBtn {
@@ -415,10 +428,6 @@ footer .column i {
 }
 
 /* NavBar + Java */
-
-footer .column i+i {
-  padding: 0 0.5em;
-}
 
 .sticky {
   position: fixed;
