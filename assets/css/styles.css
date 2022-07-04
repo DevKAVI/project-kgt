@@ -4,6 +4,14 @@ body {
   scroll-behavior: smooth;
 }
 
+.btn:focus {
+  box-shadow: none !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
 * {
   font-family: var(--Montserrat) !important;
   box-sizing: border-box;
