@@ -25,7 +25,7 @@
 <body class="d-print-none">
 
     <header>
-        <div class="container-fluid p-0" id="home">
+        <div class="container-fluid p-0 text-center" id="home">
             <!--Navigation Bar-->
             <nav id="navbar-home" class="navbar navbar-expand-lg">
                 <a class="navbar-brand font-weight-bold" href="#">KG Technologies</a>
@@ -33,14 +33,19 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span><i class="bi bi-list text-light"></i></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse text-center" id="navbarNav">
                     <div class="mr-auto"></div>
                     <ul class="navbar-nav nav-pills">
                         <li class="nav-item">
                             <a class="nav-link" href="#home">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About Me</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-expanded="false">About</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#about-me">Myself</a></li>
+                                <li><a class="dropdown-item" href="#about-us">The Company</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#features">Statistics</a>
@@ -54,11 +59,13 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#reviews">Reviews</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown text-center">
                             <a class="nav-link dropdown-toggle" href="#contact" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-expanded="false">Contact Us</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="./sign-up.html">Sign Up</a></li>
+                                <span class="disabled">- or -</span>
+                                <li><a class="dropdown-item" href="./log-in.html">Log In</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -67,28 +74,30 @@
         </div>
 
         <!--Home-->
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-md-7 col-sm-12 home-text">
-                    <h6>Want something created for you or your business ?</h6>
-                    <h1>Welcome!</h1>
-                    <p>
-                        We offer an assortment of quality services in the field of Information and Communication
-                        Technology
-                    </p>
+        <section class="home">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-7 col-sm-12 home-text">
+                        <h6>Want something created for you or your business ?</h6>
+                        <h1>Welcome!</h1>
+                        <p>
+                            We offer an assortment of quality services in the field of Information and Communication
+                            Technology
+                        </p>
+                    </div>
+                    <div class="col-md-5 col-sm-12 h-25">
+                        <img src="./assets/img/email_campaign_monochromatic.svg" alt="header_image" />
+                    </div>
                 </div>
-                <div class="col-md-5 col-sm-12 h-25">
-                    <img src="./assets/img/email_campaign_monochromatic.svg" alt="header_image" />
-                </div>
-            </div>
 
-        </div>
+            </div>
+        </section>
     </header>
 
     <main>
 
         <!--About-->
-        <section class="section-1" id="about">
+        <section class="section-1" id="about-me">
             <div class="container text-center nav-view">
                 <div class="row">
                     <div class="col-md-6 col-12">
@@ -333,7 +342,7 @@
 
     <!--Footer-->
     <footer>
-        <div class="container-fluid">
+        <div class="container-fluid" id="about-us">
             <div class="row text-left">
                 <div class="col-md-5 col-sm-5">
                     <h4 class="text-light">About us :</h4>
@@ -350,7 +359,7 @@
                     <form class="form-inline">
                         <div class="col pl-0">
                             <div class="input-group pr-5">
-                                <input type="text" class="form-control bg-dark text-white"
+                                <input type="text" class="form-control email-area bg-dark text-white"
                                     id="inlineFormInputGroupUsername2" placeholder="Email">
                                 <div class="animation input-group-text send">
                                     <span class="animation"><i class="text-light bi bi-chevron-right"></i></span>

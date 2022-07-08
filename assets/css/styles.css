@@ -52,10 +52,6 @@ header a {
   border: none;
 }
 
-header .navbar {
-  text-align: center !important;
-}
-
 header .nav-link:hover {
   background-color: #ffffff;
   color: black !important;
@@ -78,19 +74,6 @@ header .navbar-brand:hover {
   color: #fff !important;
 }
 
-header .row .col-md-7 {
-  padding: 22vmin 1vmin;
-  padding-bottom: 35vmin;
-  color: white;
-}
-
-header .row .col-md-5 {
-  padding: 14vmin 1vmin;
-}
-
-header .row .col-md-5 img {
-  width: 90%;
-}
 
 header {
   background: rgba(0, 97, 242, 1);
@@ -98,18 +81,34 @@ header {
   background: var(--bggradient);
 }
 
-header .container .col-md-7 h6 {
+/****** Section Home ******/
+
+.home .row .col-md-7 {
+  padding: 22vmin 1vmin;
+  padding-bottom: 35vmin;
+  color: white;
+}
+
+.home .row .col-md-5 {
+  padding: 14vmin 1vmin;
+}
+
+.home .row .col-md-5 img {
+  width: 90%;
+}
+
+.home .container .col-md-7 h6 {
   padding: 1vmin;
   letter-spacing: 4px;
 }
 
-header .container .col-md-7 h1 {
+.home .container .col-md-7 h1 {
   font-size: 8.5vmin;
   font-weight: bold;
   padding: 0.1em 0em;
 }
 
-header .container .col-md-7 p {
+.home .container .col-md-7 p {
   padding: 1vmin 5vmin;
 }
 
@@ -186,12 +185,12 @@ header .container .col-md-7 p {
 }
 
 .cover .content>h1 {
-  font-size: 6vmin;
+  font-size: 2.6em;
   color: whitesmoke;
 }
 
 .cover .content>p {
-  font-size: 2vmin;
+  font-size: 1.5em;
   color: #e5e5e5;
 }
 
@@ -222,6 +221,10 @@ header .container .col-md-7 p {
   background: var(--bggradient-reverse);
 }
 
+.section-3 .container {
+  padding-bottom: 2vmin;
+}
+
 .section-3 .content {
   width: 100%;
   height: 100%;
@@ -229,13 +232,14 @@ header .container .col-md-7 p {
 }
 
 .section-3 .content>h1 {
-  font-size: 6vmin;
+  font-size: 4em;
   color: white;
 }
 
 .section-3 .content>p {
-  font-size: 2vmin;
+  font-size: 1.3em;
   color: white;
+  padding-bottom: 5vmin;
 }
 
 /****** Section 4 - Pricing ******/
@@ -247,8 +251,8 @@ header .container .col-md-7 p {
 
 .purchase>p {
   color: var(--light-black);
-  font-size: 3vmin;
-  padding-bottom: 10vmin;
+  font-size: 1.5em;
+  padding: 0px 2vmin 10vmin 2vmin;
 }
 
 .purchase .cards .card {
@@ -364,6 +368,10 @@ footer .column i+i {
 
 footer .animation:hover span {
   padding-right: 65px;
+}
+
+footer .email-area:focus {
+  box-shadow: none !important;
 }
 
 /****** Top Button ******/
