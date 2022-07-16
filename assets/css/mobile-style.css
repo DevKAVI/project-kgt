@@ -1,6 +1,12 @@
+/* screen size 768px */
+
 @media only screen and (max-width: 768px) {
   header .navbar-brand {
     padding-left: 1rem;
+  }
+
+  header .navbar-toggler {
+    display: none;  
   }
 
   .section-1 .row .col-md-6 .panel {
@@ -34,6 +40,11 @@
   footer .row .col-md-2 {
     margin-top: 8vmin;
   }
+
+  #btmNav {
+    display: block;
+  }
+
 }
 
 /* screen size 375px */
@@ -49,6 +60,8 @@
     margin-left: -4vmin;
   }
 }
+
+/* screen size 991px */
 
 @media only screen and (max-width: 991px) {
   header .nav-item:last-child {

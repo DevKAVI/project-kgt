@@ -333,11 +333,12 @@ footer {
 }
 
 footer p>span {
-  color: rgba(0, 97, 242, 1);
+  color: rgb(42, 127, 255);
 }
 
 footer input {
-  border: none !important;
+  /* border: none !important; */
+  border: 1px solid white;
 }
 
 footer input::placeholder {
@@ -346,11 +347,10 @@ footer input::placeholder {
 
 footer .input-group .input-group-text {
   background: var(--bggradient);
-  border: none;
 }
 
 footer .column i {
-  color: rgba(0, 97, 242, 1);
+  color: rgb(42, 127, 255);
 }
 
 footer .send:hover {
@@ -372,6 +372,40 @@ footer .animation:hover span {
 
 footer .email-area:focus {
   box-shadow: none !important;
+  border: 1px solid white;
+}
+
+/****** Bottom Navigation ******/
+
+#btmNav {
+  display: none;
+}
+
+#btmNav .btm-navbar {
+  position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#btmNav .btm-navbar-nav {
+  display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+#btmNav .btm-nav-item {
+
+}
+
+#btmNav .btm-navbar .btm-nav-link {
+  padding-right: 0;
+    padding-left: 0;
 }
 
 /****** Top Button ******/
@@ -444,7 +478,7 @@ footer .email-area:focus {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.815);
+  background: rgba(0, 0, 0, 0.850);
   z-index: 9999;
   transition: all 600ms ease-in-out;
 }
