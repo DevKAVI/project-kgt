@@ -24,8 +24,16 @@ section {
 
 :root {
   --Montserrat: "Montserrat";
-  --bggradient: linear-gradient(to bottom, rgba(0, 97, 242, 1) 0%, rgba(105, 0, 199, 1) 100%);
-  --bggradient-reverse: linear-gradient(to bottom, rgba(105, 0, 199, 1) 0%, rgba(0, 97, 242, 1) 100%);
+  --bggradient: linear-gradient(
+    to bottom,
+    rgba(0, 97, 242, 1) 0%,
+    rgba(105, 0, 199, 1) 100%
+  );
+  --bggradient-reverse: linear-gradient(
+    to bottom,
+    rgba(105, 0, 199, 1) 0%,
+    rgba(0, 97, 242, 1) 100%
+  );
   --light-black: #2e2c2caf;
   --light-gray: rgba(255, 255, 255, 0);
 }
@@ -39,9 +47,12 @@ section {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(rgba(105, 0, 199, 1) 0%, rgba(0, 97, 242, 1) 100%);
-  border-radius: 0.50rem;
-  margin-block: .5em;
+  background: linear-gradient(
+    rgba(105, 0, 199, 1) 0%,
+    rgba(0, 97, 242, 1) 100%
+  );
+  border-radius: 0.5rem;
+  margin-block: 0.5em;
   border: 0.25rem solid #fff;
 }
 
@@ -73,7 +84,6 @@ header .navbar-brand:hover {
   text-decoration: underline !important;
   color: #fff !important;
 }
-
 
 header {
   background: rgba(0, 97, 242, 1);
@@ -163,8 +173,6 @@ header {
   width: 100%;
   height: 55vmin;
   background: url("../img/backdrop.jpg");
-  background-position: -24rem -19rem;
-  background-size: 150%;
   position: relative;
 }
 
@@ -184,12 +192,12 @@ header {
   padding-top: 19vmin;
 }
 
-.cover .content>h1 {
+.cover .content > h1 {
   font-size: 2.6em;
   color: whitesmoke;
 }
 
-.cover .content>p {
+.cover .content > p {
   font-size: 1.5em;
   color: #e5e5e5;
 }
@@ -231,12 +239,12 @@ header {
   padding-top: 19vmin;
 }
 
-.section-3 .content>h1 {
+.section-3 .content > h1 {
   font-size: 4em;
   color: white;
 }
 
-.section-3 .content>p {
+.section-3 .content > p {
   font-size: 1.3em;
   color: white;
   padding-bottom: 5vmin;
@@ -244,12 +252,12 @@ header {
 
 /****** Section 4 - Pricing ******/
 
-.purchase>h1 {
+.purchase > h1 {
   padding-top: 15vmin;
   padding-bottom: 0.1em;
 }
 
-.purchase>p {
+.purchase > p {
   color: var(--light-black);
   font-size: 1.5em;
   padding: 0px 2vmin 10vmin 2vmin;
@@ -282,7 +290,7 @@ header {
   border-top-left-radius: 170px;
 }
 
-.card-body .pricing>h1 {
+.card-body .pricing > h1 {
   font-size: 10vmin;
   padding: 1em 0.5em;
 }
@@ -311,7 +319,7 @@ header {
   padding: 0.5em;
 }
 
-.section-4 .card-body>a {
+.section-4 .card-body > a {
   font-size: 1.5em;
 }
 
@@ -332,7 +340,7 @@ footer {
   padding: 14vmin 18vmin;
 }
 
-footer p>span {
+footer p > span {
   color: rgb(42, 127, 255);
 }
 
@@ -362,7 +370,7 @@ footer .send:hover {
   color: white;
 }
 
-footer .column i+i {
+footer .column i + i {
   padding: 0 0.5em;
 }
 
@@ -379,50 +387,70 @@ footer .email-area:focus {
 
 #btmNav {
   display: none;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
 }
 
-#btmNav .btm-navbar {
+#btmNavContainer {
+  width: 100%;
   position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+  background-color: rgba(255, 255, 255);
 }
 
-#btmNav .btm-navbar-nav {
-  display: flex;
-    flex-direction: column;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
+#btmNavGrid {
+  text-align: center;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  grid-auto-flow: column;
+  max-width: 64rem;
+  width: 100%;
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#btmNav .btm-nav-item {
-
+#btmNavGrid div {
+  display: block;
+  text-align: center;
+  float: left;
 }
 
-#btmNav .btm-navbar .btm-nav-link {
-  padding-right: 0;
-    padding-left: 0;
+#btmNavGrid i {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+#btmNavGrid span {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.8rem;
+  font-weight: 501;
+  line-height: 1rem;
 }
 
 /****** Top Button ******/
 
 #topBtn {
   position: fixed;
-  bottom: 20px;
+  bottom: 40px;
   z-index: 99;
   right: 20px;
   text-align: center;
   vertical-align: middle;
   border: 2px solid transparent;
   border-color: #fff;
-  border-radius: 0.50rem;
+  border-radius: 0.5rem;
   padding: 0.375rem 0.75rem;
   font-size: 18px;
-  background: linear-gradient(135deg, rgba(105, 0, 199, 1) 0%, rgba(0, 97, 242, 1) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(105, 0, 199, 1) 0%,
+    rgba(0, 97, 242, 1) 100%
+  );
   color: #fff;
   cursor: pointer;
   margin: 5px;
@@ -478,7 +506,7 @@ footer .email-area:focus {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.850);
+  background: rgba(0, 0, 0, 0.85);
   z-index: 9999;
   transition: all 600ms ease-in-out;
 }

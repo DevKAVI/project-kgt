@@ -1,4 +1,11 @@
-/* screen size 768px */
+/** Screen Size 1098px Patch **/
+@media only screen and (max-width: 1098px) {
+  .section-4 .card {
+    width: auto;
+  }
+}
+
+/** Screen size 768px **/
 
 @media only screen and (max-width: 768px) {
   header .navbar-brand {
@@ -6,7 +13,7 @@
   }
 
   header .navbar-toggler {
-    display: none;  
+    display: none;
   }
 
   .section-1 .row .col-md-6 .panel {
@@ -37,17 +44,16 @@
     padding-left: 0.6rem;
   }
 
-  footer .row .col-md-2 {
-    margin-top: 8vmin;
-  }
-
   #btmNav {
     display: block;
   }
 
+  .top {
+    visibility: hidden !important;
+  }
 }
 
-/* screen size 375px */
+/** screen size 375px **/
 
 @media only screen and (max-width: 375px) {
   .section-4 .card {
@@ -61,7 +67,7 @@
   }
 }
 
-/* screen size 991px */
+/** screen size 991px **/
 
 @media only screen and (max-width: 991px) {
   header .nav-item:last-child {
