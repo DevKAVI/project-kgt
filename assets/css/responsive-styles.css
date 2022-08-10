@@ -92,6 +92,21 @@
     padding: 10vmin !important;
   }
 
+  .section-3 .row h1 {
+    font-weight: 600 !important;
+  }
+
+  .section-3 .row h1,
+  p {
+    font-family: "Poppins", sans-serif !important;
+  }
+
+  .section-3 .service-text-1,
+  .service-img-2,
+  .service-text-3 {
+    padding-top: 5vmin;
+  }
+
   .section-4 .carousel-item {
     padding-left: 0.6rem;
   }
@@ -112,9 +127,9 @@
   }
 }
 
-/** Screen size 600px **/
+/** Screen size 755px **/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 755px) {
   .cover .content p {
     display: none;
   }
