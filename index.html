@@ -14,7 +14,7 @@
     <script src="./assets/js/fontawesome.js"></script>
     <!--My Own CSS-->
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/offline-fonts.css" />
     <link rel="stylesheet" href="./assets/css/responsive-styles.css" />
     <!--Java Scripts-->
     <script src="./assets/js/scrollreveal.js"></script>
@@ -74,28 +74,8 @@
               <li class="nav-item">
                 <a class="nav-link" href="#reviews">Reviews</a>
               </li>
-              <li class="nav-item dropdown text-center">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#contact"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-expanded="false"
-                  >Contact Us</a
-                >
-                <ul
-                  class="dropdown-menu text-center"
-                  aria-labelledby="navbarDropdown"
-                >
-                  <li>
-                    <a class="dropdown-item" href="./sign-up.html">Sign Up</a>
-                  </li>
-                  <span class="text-muted">- or -</span>
-                  <li>
-                    <a class="dropdown-item" href="./log-in.html">Log In</a>
-                  </li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -405,6 +385,56 @@
           </div>
         </div>
       </section>
+
+      <!--Contact Us-->
+      <section class="section-5" id="contact">
+        <div class="container">
+          <div class="content">
+            <div class="left-side">
+              <div class="address details">
+                <i class="bi bi-geo-alt-fill"></i>
+                <div class="topic">Address</div>
+                <div class="text-one">Walpitagama, Wadumunnegedara,</div>
+                <div class="text-two">Kuliyapitiya, Sri Lanka</div>
+              </div>
+              <div class="phone details">
+                <i class="bi bi-phone-fill"></i>
+                <div class="topic">Phone</div>
+                <div class="text-one">+94712388831</div>
+                <div class="text-two">+94751559520</div>
+              </div>
+              <div class="email details">
+                <i class="bi bi-envelope-fill"></i>
+                <div class="topic">Email</div>
+                <div class="text-one">dmspriyankara@gmail.com</div>
+                <div class="text-two">dmkavishka.ganganatha@gmail.com</div>
+              </div>
+            </div>
+            <div class="right-side">
+              <div class="topic-text">Send us a message</div>
+              <p>
+                If you have any issues or inquiries about us or our services,
+                you can forward them towards us. We will do our best to reach
+                out to you in time and it's our pleasure to be of assistance.
+              </p>
+              <form action="#">
+                <div class="input-box">
+                  <input type="text" placeholder="Enter your name" />
+                </div>
+                <div class="input-box">
+                  <input type="text" placeholder="Enter your email" />
+                </div>
+                <div class="input-box message-box">
+                  <textarea placeholder="Enter your message"></textarea>
+                </div>
+                <div class="button">
+                  <input type="button" value="Send Now" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!--Top Button-->
@@ -490,7 +520,7 @@
             >
           </div>
           <div>
-            <a href="" class="btn"
+            <a href="#contact" class="btn"
               ><i class="bi bi-link"></i><span>Contact Us</span></a
             >
           </div>

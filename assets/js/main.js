@@ -1,30 +1,32 @@
+// Loads the page from the start when refreshed
 if (history.scrollRestoration) {
-    history.scrollRestoration = 'manual';
+  history.scrollRestoration = "manual";
 } else {
-    window.onbeforeunload = function() {
-        window.scrollTo(0, 0);
-    }
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
 }
 
-let nCount = selector => {
+let nCount = (selector) => {
   $(selector).each(function () {
-    $(this)
-      .animate({
-        Counter: $(this).text()
-      }, {
-        // A string or number determining how long the animation will run.
+    $(this).animate(
+      {
+        Counter: $(this).text(),
+      },
+      {
+        // A string or a number determining how long the animation will run.
         duration: 2000,
         // A string indicating which easing function to use for the transition.
         easing: "swing",
         /**
-         * A function to be called for each animated property of each animated element. 
-         * This function provides an opportunity to
-         *  modify the Tween object to change the value of the property before it is set.
-         */
+         * A function to be called for each animated property of each animated element.
+         * This function provides an opportunity to modify the Tween object to change the value of the property before it is set.
+         **/
         step: function (value) {
           $(this).text(Math.ceil(value));
-        }
-      });
+        },
+      }
+    );
   });
 };
 
@@ -38,14 +40,7 @@ $(window).scroll(function () {
   }
 });
 
-
-
-/**
- *
- *  sticky navigation
- *
- */
-
+// Sticky Navigation Function
 let navbar = $(".navbar");
 
 $(window).scroll(function () {
