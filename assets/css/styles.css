@@ -643,5 +643,9 @@ footer .email-area:focus {
   width: 100%;
   background: rgba(0, 0, 0, 0.85);
   z-index: 9999;
-  transition: all 130ms ease-in-out;
+  transition: all 450ms ease-out;
+}
+
+.btm-nav-animation {
+  transition: all 600ms ease-out;
 }

@@ -20,6 +20,15 @@ $(window).scroll(function () {
   }
 });
 
+$(window).on("resize", function () {
+  if ($(window).width() < 768) {
+    $("#btmNav").addClass("btm-nav-animation");
+  } else {
+    $("#btmNav").removeClass("btm-nav-animation");
+  }
+});
+
+// Statistics Counter Animation
 let nCount = (selector) => {
   $(selector).each(function () {
     $(this).animate(
