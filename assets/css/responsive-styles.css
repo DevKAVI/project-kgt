@@ -1,7 +1,55 @@
 /** Screen Size 1098px Patch **/
+
 @media only screen and (max-width: 1098px) {
   .section-4 .card {
     width: auto;
+  }
+}
+
+/** screen size 991px **/
+
+@media only screen and (max-width: 991px) {
+  header .nav-item:last-child {
+    padding-right: 0em;
+  }
+}
+
+/** Screen size 950px **/
+
+@media (max-width: 950px) {
+  .section-5 .container {
+    width: 90%;
+    padding: 30px 40px 40px 35px;
+  }
+  .container .content .right-side {
+    width: 75%;
+    margin-left: 55px;
+  }
+}
+
+/** screen size 820px **/
+
+@media (max-width: 820px) {
+  .section-5 .container {
+    margin: 40px 0;
+    height: 100%;
+  }
+  .section-5 .container .content {
+    flex-direction: column-reverse;
+  }
+  .container .content .left-side {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .container .content .left-side::before {
+    display: none;
+  }
+  .container .content .right-side {
+    width: 100%;
+    margin-left: 0;
   }
 }
 
@@ -13,6 +61,10 @@
   }
 
   header .navbar-toggler {
+    display: none;
+  }
+
+  .home .row .col-md-5 {
     display: none;
   }
 
@@ -51,6 +103,21 @@
   .top {
     visibility: hidden !important;
   }
+
+  footer .ft-abt,
+  .ft-news,
+  .ft-flw {
+    padding-top: 2vmin;
+    padding-bottom: 2vmin;
+  }
+}
+
+/** Screen size 600px **/
+
+@media only screen and (max-width: 600px) {
+  .cover .content p {
+    display: none;
+  }
 }
 
 /** screen size 375px **/
@@ -61,16 +128,10 @@
   }
 }
 
+/** screen size 320px **/
+
 @media only screen and (max-width: 320px) {
   .section-4 .carousel-inner {
     margin-left: -4vmin;
-  }
-}
-
-/** screen size 991px **/
-
-@media only screen and (max-width: 991px) {
-  header .nav-item:last-child {
-    padding-right: 0em;
   }
 }
