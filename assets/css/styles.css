@@ -2,6 +2,7 @@ html,
 body {
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
+  background: #f3f4f6;
 }
 
 .btn:focus {
@@ -70,11 +71,22 @@ header .nav-link:hover {
 }
 
 header .nav-item:last-child {
-  padding-right: 10.5em;
+  padding-right: 8rem;
+}
+
+header button {
+  padding-right: 8rem !important;
 }
 
 header .nav-item {
   padding: 0.9em;
+}
+
+nav .container-fluid ul li a.nav-active {
+  background-color: white;
+  border-color: #fff;
+  border-radius: 5px;
+  color: black;
 }
 
 header .navbar-brand {
@@ -194,7 +206,7 @@ header {
 }
 
 .cover .content > h1 {
-  font-size: 2.6em;
+  font-size: 3.5em;
   color: whitesmoke;
 }
 
@@ -241,12 +253,12 @@ header {
 }
 
 .section-3 .content > h1 {
-  font-size: 4em;
+  font-size: 3.5em;
   color: white;
 }
 
 .section-3 .content > p {
-  font-size: 1.3em;
+  font-size: 1.5em;
   color: white;
   padding-bottom: 5vmin;
 }
@@ -256,6 +268,7 @@ header {
 .purchase > h1 {
   padding-top: 15vmin;
   padding-bottom: 0.1em;
+  font-size: 3.5em;
 }
 
 .purchase > p {
@@ -285,12 +298,6 @@ header {
   color: var(--light-black);
 }
 
-.card-body .pricing {
-  background: rgba(157, 175, 235, 0.199);
-  border-top-right-radius: 170px;
-  border-top-left-radius: 170px;
-}
-
 .card-body .pricing > h1 {
   font-size: 10vmin;
   padding: 1em 0.5em;
@@ -301,10 +308,11 @@ header {
 .section-4 .container h1 {
   font-size: 6vmin;
   padding-top: 14vmin;
+  font-size: 3.5em;
 }
 
 .section-4 .container p {
-  font-size: 2.5vmin;
+  font-size: 1.5em;
 }
 
 .section-4 .team {
@@ -506,6 +514,7 @@ footer .email-area:focus {
   bottom: 0;
   position: fixed;
   z-index: 999;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
 #btmNavContainer {
@@ -624,5 +633,5 @@ footer .email-area:focus {
   width: 100%;
   background: rgba(0, 0, 0, 0.85);
   z-index: 9999;
-  transition: all 600ms ease-in-out;
+  transition: all 130ms ease-in-out;
 }

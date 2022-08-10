@@ -21,66 +21,59 @@
     <script src="./assets/js/popper.min.js"></script>
   </head>
 
-  <body class="text-wrap">
+  <body
+    class="text-wrap"
+    data-spy="scroll"
+    data-target="#navbar-home"
+    data-offset="0"
+    class="nav-active"
+    tabindex="0"
+  >
     <header>
-      <div class="container-fluid p-0 text-center" id="home">
-        <!--Navigation Bar-->
-        <nav id="navbar-home" class="navbar navbar-expand-lg">
-          <a class="navbar-brand font-weight-bold" href="#">KG Technologies</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span><i class="bi bi-list text-light"></i></span>
-          </button>
-          <div class="collapse navbar-collapse text-center" id="navbarNav">
-            <div class="mr-auto"></div>
-            <ul class="navbar-nav nav-pills">
-              <li class="nav-item dropdown text-center">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href=""
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-expanded="false"
-                  >About</a
-                >
-                <ul
-                  class="dropdown-menu text-center"
-                  aria-labelledby="navbarDropdown"
-                >
-                  <li><a class="dropdown-item" href="#about-me">Myself</a></li>
-                  <span class="text-muted">- and -</span>
-                  <li>
-                    <a class="dropdown-item" href="#about-us">The Company</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#statistics">Statistics</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">Our Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#pricing">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#reviews">Reviews</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+      <!--Navigation Bar-->
+      <nav>
+        <div class="container-fluid p-0 text-center" id="home">
+          <nav id="navbar-home" class="navbar navbar-expand-lg">
+            <a class="navbar-brand font-weight-bold" href="#home"
+              >KG Technologies</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span><i class="bi bi-list text-light"></i></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarNav">
+              <div class="mr-auto"></div>
+              <ul class="navbar-nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#statistics">Statistics</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Our Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#pricing">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#reviews">Reviews</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </nav>
 
       <!--Home-->
       <section class="home">
@@ -107,7 +100,7 @@
 
     <main>
       <!--About-->
-      <section class="section-1" id="about-me">
+      <section class="section-1" id="about">
         <div class="container text-center nav-view">
           <div class="row">
             <div class="col-md-6 col-12">
@@ -152,7 +145,7 @@
         <div class="cover">
           <div class="overlay"></div>
           <div class="content text-center">
-            <h1>Some Features That Made Us Unique :</h1>
+            <h1>Some Features That Made Us Unique:</h1>
             <p>Up to date statistics of our progress so far...</p>
           </div>
         </div>
@@ -187,11 +180,9 @@
             <h1>What We Offer:</h1>
             <p>We strive to be excellent in everything we do...</p>
           </div>
+
           <div class="row align-items-center justify-content-center text-white">
             <div class="service-text-1 col-md-5">
-              <button type="button" class="btn btn-outline-light mb-3">
-                Coding
-              </button>
               <h1>We code.</h1>
               <p>
                 We are professionals who designs and codes software for
@@ -204,14 +195,12 @@
             <div class="service-img-1 col-md-5">
               <img src="assets/img/coding_.svg" alt="" />
             </div>
+
             <div class="service-img-2 col-md-5">
               <img src="assets/img/revenue_.svg" alt="" />
             </div>
 
             <div class="service-text-2 col-md-5">
-              <button type="button " class="btn btn-outline-light mb-3">
-                Marketing
-              </button>
               <h1>We promote.</h1>
               <p>
                 We can help you promote your business and products by designing
@@ -221,9 +210,6 @@
             </div>
 
             <div class="service-text-3 col-md-5">
-              <button type="button" class="btn btn-outline-light mb-3">
-                Tech Support
-              </button>
               <h1>We help.</h1>
               <p>
                 If you are facing any technical issues in your life or in your
@@ -255,7 +241,8 @@
                     <h5 class="card-title">Coding Services</h5>
                   </div>
                   <p class="card-text">
-                    Software and Website Designing to Suit Your Needs...
+                    Software Solutions and Website Designing to Suit Your
+                    Needs...
                   </p>
                   <div class="pricing">
                     <h1>$99</h1>
@@ -288,8 +275,8 @@
                     <h5 class="card-title">Technical Support</h5>
                   </div>
                   <p class="card-text">
-                    24/7 Technical Support for Our Customers Until The Problems
-                    Are Solved...
+                    We are Available 24/7 to Offer Technical Support for any
+                    Company or Customer...
                   </p>
                   <div class="pricing">
                     <h1>$59</h1>
@@ -411,7 +398,7 @@
               </div>
             </div>
             <div class="right-side">
-              <div class="topic-text">Send us a message</div>
+              <div class="topic-text">Send us a message...</div>
               <p>
                 If you have any issues or inquiries about us or our services,
                 you can forward them towards us. We will do our best to reach
@@ -496,7 +483,7 @@
     </footer>
 
     <!--Bottom Navigation-->
-    <section id="btmNav">
+    <nav id="btmNav">
       <div id="btmNavContainer">
         <div id="btmNavGrid">
           <div>
@@ -526,7 +513,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </nav>
 
     <!--Java Scripts-->
     <script src="./assets/js/jquery.js"></script>

@@ -7,6 +7,19 @@ if (history.scrollRestoration) {
   };
 }
 
+// Sticky Navigation Function
+let navbar = $(".navbar");
+
+$(window).scroll(function () {
+  // get the complete hight of window
+  let oTop = $(".nav-view").offset().top - window.innerHeight;
+  if ($(window).scrollTop() > oTop) {
+    navbar.addClass("sticky");
+  } else {
+    navbar.removeClass("sticky");
+  }
+});
+
 let nCount = (selector) => {
   $(selector).each(function () {
     $(this).animate(
@@ -37,18 +50,5 @@ $(window).scroll(function () {
   if (a == 0 && $(window).scrollTop() >= oTop) {
     a++;
     nCount(".rect > h1");
-  }
-});
-
-// Sticky Navigation Function
-let navbar = $(".navbar");
-
-$(window).scroll(function () {
-  // get the complete hight of window
-  let oTop = $(".nav-view").offset().top - window.innerHeight;
-  if ($(window).scrollTop() > oTop) {
-    navbar.addClass("sticky");
-  } else {
-    navbar.removeClass("sticky");
   }
 });
