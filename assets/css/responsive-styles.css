@@ -41,7 +41,7 @@
     width: 100%;
     flex-direction: row;
     margin-top: 40px;
-    justify-content: center;
+    align-content: center;
     flex-wrap: wrap;
   }
   .container .content .left-side::before {
@@ -119,11 +119,14 @@
     visibility: hidden !important;
   }
 
-  footer .ft-abt,
-  .ft-news,
+  footer .ft-cright,
   .ft-flw {
     padding-top: 2vmin;
     padding-bottom: 2vmin;
+  }
+
+  .ft-cright {
+    padding-bottom: 50px !important;
   }
 }
 
@@ -132,6 +135,12 @@
 @media only screen and (max-width: 755px) {
   .cover .content p {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .cover .content h1 {
+    font-size: 2em;
   }
 }
 

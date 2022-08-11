@@ -11,20 +11,12 @@ if (history.scrollRestoration) {
 let navbar = $(".navbar");
 
 $(window).scroll(function () {
-  // get the complete hight of window
+  // Get the complete hight of window
   let oTop = $(".nav-view").offset().top - window.innerHeight;
   if ($(window).scrollTop() > oTop) {
     navbar.addClass("sticky");
   } else {
     navbar.removeClass("sticky");
-  }
-});
-
-$(window).on("resize", function () {
-  if ($(window).width() < 768) {
-    $("#btmNav").addClass("btm-nav-animation");
-  } else {
-    $("#btmNav").removeClass("btm-nav-animation");
   }
 });
 
@@ -37,7 +29,7 @@ let nCount = (selector) => {
       },
       {
         // A string or a number determining how long the animation will run.
-        duration: 2000,
+        duration: 2500,
         // A string indicating which easing function to use for the transition.
         easing: "swing",
         /**
@@ -54,7 +46,7 @@ let nCount = (selector) => {
 
 let a = 0;
 $(window).scroll(function () {
-  // The .offset() method allows us to retrieve the current position of an element  relative to the document
+  // The .offset() method allows us to retrieve the current position of an element relative to the document
   let oTop = $(".numbers").offset().top - window.innerHeight;
   if (a == 0 && $(window).scrollTop() >= oTop) {
     a++;
