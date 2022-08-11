@@ -490,10 +490,24 @@ footer p > span {
 
 footer .column i {
   color: rgb(42, 127, 255);
+  font-size: 25px;
 }
 
 footer .column i + i {
   padding: 0 0.5em;
+}
+
+.ft-power div {
+  display: grid !important;
+}
+
+.ft-power i,
+.c-span {
+  color: #e5e5e5;
+}
+
+.ft-power i {
+  font-size: 45px;
 }
 
 /****** Bottom Navigation ******/
@@ -513,7 +527,8 @@ footer .column i + i {
   background-color: rgba(255, 255, 255);
 }
 
-#btmNavGrid {
+#btmNavGrid,
+.icon-grid {
   text-align: center;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
@@ -525,13 +540,16 @@ footer .column i + i {
   margin-right: auto;
 }
 
-#btmNavGrid div {
+#btmNavGrid div,
+.c-div {
   display: block;
   text-align: center;
   float: left;
 }
 
-#btmNavGrid i {
+#btmNavGrid i,
+.c-icon {
+  color: black;
   font-size: 20px;
   font-weight: bold;
   margin-left: 0.5rem;
@@ -539,7 +557,8 @@ footer .column i + i {
   vertical-align: middle;
 }
 
-#btmNavGrid span {
+#btmNavGrid span,
+.c-span {
   display: block;
   margin-top: 5px;
   font-size: 0.8rem;

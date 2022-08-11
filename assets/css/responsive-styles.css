@@ -4,6 +4,10 @@
   .section-4 .card {
     width: auto;
   }
+
+  footer .container-fluid .row {
+    justify-content: unset !important;
+  }
 }
 
 /** screen size 991px **/
@@ -68,6 +72,18 @@
     display: none;
   }
 
+  .section-1 {
+    padding: 8vmin 0vmin;
+  }
+
+  .section-1 .container {
+    max-width: none;
+  }
+
+  .section-1 .row .col-md-6 .pray img {
+    display: none;
+  }
+
   .section-1 .row .col-md-6 .panel {
     position: initial;
     width: initial;
@@ -120,13 +136,14 @@
   }
 
   footer .ft-cright,
-  .ft-flw {
+  .ft-flw,
+  .ft-power {
     padding-top: 2vmin;
     padding-bottom: 2vmin;
   }
 
   .ft-cright {
-    padding-bottom: 50px !important;
+    margin-bottom: 70px !important;
   }
 }
 
@@ -149,6 +166,10 @@
 @media only screen and (max-width: 375px) {
   .section-4 .card {
     width: 18em;
+  }
+
+  .ft-power div {
+    display: block !important;
   }
 }
 
