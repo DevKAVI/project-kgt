@@ -214,12 +214,12 @@ header {
   padding-top: 19vmin;
 }
 
-.cover .content > h1 {
+.cover .content .stat-card > h1 {
   font-size: 6.5vmin;
   color: whitesmoke;
 }
 
-.cover .content > p {
+.cover .content .stat-card > p {
   font-size: 1.5em;
   color: #e5e5e5;
 }
@@ -275,8 +275,11 @@ header {
 
 /****** Section 4 - Pricing ******/
 
-.purchase > h1 {
+.purchase .sec-4-head {
   padding-top: 15vmin;
+}
+
+.purchase > h1 {
   padding-bottom: 0.1em;
   font-size: 6.5vmin;
 }
