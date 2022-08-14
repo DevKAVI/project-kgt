@@ -74,6 +74,115 @@ section {
   border: 0.25rem solid #fff;
 }
 
+/** Loading Page **/
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 97, 242);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4000;
+}
+
+.loader-text {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+  margin-right: 15px;
+  font-size: 22px;
+}
+
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/** Header **/
+
 header a {
   font-size: 1em;
   color: white;
@@ -317,6 +426,14 @@ header {
   padding: 1em 0.5em;
 }
 
+.full-price {
+  border-radius: 10px !important;
+}
+
+.collapse .table {
+  margin-bottom: 0 !important;
+}
+
 /****** Section 4 - Reviews ******/
 
 .section-4 .container h1 {
@@ -490,11 +607,7 @@ footer p > span {
 
 footer .column i {
   color: rgb(42, 127, 255);
-  font-size: 25px;
-}
-
-footer .column i + i {
-  padding: 0 0.5em;
+  font-size: 20px;
 }
 
 .ft-power div {
@@ -507,7 +620,7 @@ footer .column i + i {
 }
 
 .ft-power i {
-  font-size: 45px;
+  font-size: 40px;
 }
 
 /****** Bottom Navigation ******/
@@ -641,6 +754,6 @@ footer .column i + i {
   top: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.85);
-  z-index: 9999;
+  z-index: 3000;
   transition: all 450ms ease-out;
 }
