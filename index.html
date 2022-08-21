@@ -14,20 +14,21 @@
     <link rel="stylesheet" href="./assets/css/aos.css" />
     <!--My Own CSS-->
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="stylesheet" href="./assets/css/offline-fonts.css" />
     <link rel="stylesheet" href="./assets/css/responsive-styles.css" />
+    <link rel="stylesheet" href="./assets/css/offline-fonts.css" />
   </head>
 
   <body
-    class="site text-wrap noselect"
+    id="html"
+    class="light site text-wrap noselect"
     data-spy="scroll"
     data-target="#navbar-home"
-    data-offset="0"
+    data-offset="60"
     class="nav-active"
     tabindex="0"
   >
     <section class="loader-wrapper text-center">
-      <span class="loader-text text-light text-wrap"
+      <span class="loader-text text-wrap"
         >Welcome to KG Technologies<br />Give us a few moments...</span
       >
       <div class="lds-roller">
@@ -46,10 +47,10 @@
       <!--Navigation Bar-->
       <nav>
         <div class="container-fluid p-0 text-center" id="home">
-          <nav id="navbar-home" class="navbar navbar-expand-lg">
-            <a class="navbar-brand font-weight-bold" href="#home"
-              >KG Technologies</a
-            >
+          <nav
+            id="navbar-home"
+            class="navbar sticky navbar-expand-lg text-center"
+          >
             <button
               class="navbar-toggler"
               type="button"
@@ -61,6 +62,9 @@
             >
               <span><i class="bi bi-list text-light"></i></span>
             </button>
+            <a class="navbar-brand font-weight-bold text-center" href="#home"
+              >KG Technologies</a
+            >
             <div class="collapse navbar-collapse text-center" id="navbarNav">
               <div class="mr-auto"></div>
               <ul class="navbar-nav nav-pills">
@@ -84,6 +88,12 @@
                 </li>
               </ul>
             </div>
+            <span class="mode-toggle text text-center">
+              <input type="checkbox" class="checkbox" id="toggle" />
+              <label class="label" for="toggle">
+                <div class="ball bi bi-sun-fill" id="ball"></div>
+              </label>
+            </span>
           </nav>
         </div>
       </nav>
@@ -125,9 +135,12 @@
               </div>
             </div>
             <div class="col-md-6 col-12">
-              <div class="panel shadow-lg text-left" data-aos="fade-left">
+              <div
+                class="panel shadow-lg text-left nav-view"
+                data-aos="fade-left"
+              >
                 <h1>Mr. Kavishka Ganganatha</h1>
-                <p class="pt-4 pb-2 nav-view">
+                <p class="pt-4 pb-2">
                   ' Hello ! Nice to meet you ! My name is Kavishka, but people
                   mostly call me Kavi. I'm a Sri Lankan who can speak both
                   English and Sinhalese fluently. Also a person who plays games
@@ -158,7 +171,7 @@
         <div class="cover">
           <div class="overlay"></div>
           <div class="content">
-            <div class="stat-card text-center" data-aos="fade">
+            <div class="sec2-head text-center" data-aos="fade">
               <h1>Some Features That Made Us Unique:</h1>
               <p>Up to date statistics of our progress so far...</p>
             </div>
@@ -243,15 +256,15 @@
       <!--Pricing-->
       <section class="section-4 container-fluid p-0">
         <div class="purchase text-center" id="pricing">
-          <div class="sec-4-head" data-aos="fade">
-            <h1>Purchase Our Services:</h1>
-            <p>
+          <div id="sec4-head" data-aos="fade">
+            <h1 id="head">Purchase Our Services:</h1>
+            <p id="para">
               We offer affordable prices for all types of people and companies
               all around the globe...
             </p>
           </div>
 
-          <div class="cards">
+          <div class="sec4-body cards">
             <div class="d-flex flex-row justify-content-center flex-wrap">
               <div class="card" data-aos="fade-down" data-aos-delay="200">
                 <div class="card-body">
@@ -264,7 +277,7 @@
                   </p>
                   <div class="pricing">
                     <h1><sup>$</sup>99</h1>
-                    <a href="" class="btn btn-dark px-5 py-2 primary-btn mb-5"
+                    <a href="" class="btn px-5 py-2 primary-btn mb-5"
                       >Buy This Service</a
                     >
                   </div>
@@ -281,7 +294,7 @@
                   </p>
                   <div class="pricing">
                     <h1><sup>$</sup>79</h1>
-                    <a href="" class="btn btn-dark px-5 py-2 primary-btn mb-5"
+                    <a href="" class="btn px-5 py-2 primary-btn mb-5"
                       >Buy This Service</a
                     >
                   </div>
@@ -298,7 +311,7 @@
                   </p>
                   <div class="pricing">
                     <h1><sup>$</sup>59</h1>
-                    <a href="" class="btn btn-dark px-5 py-2 primary-btn mb-5"
+                    <a href="" class="btn px-5 py-2 primary-btn mb-5"
                       >Buy This Service</a
                     >
                   </div>
@@ -404,10 +417,10 @@
       </section>
 
       <!--Reviews-->
-      <section class="section-4" id="reviews">
+      <section class="section-5" id="reviews">
         <div class="container text-center" data-aos="fade">
-          <h1 class="text-dark text-wrap">What Our Customers Say About Us:</h1>
-          <p class="text-secondary">
+          <h1>What Our Customers Say About Us:</h1>
+          <p>
             These are reviews which were left by some of our most trusted
             customers...
           </p>
@@ -432,7 +445,7 @@
                 <a href="#pricing" class="text-secondary text-decoration-none"
                   >Purchased Promotion Services</a
                 >
-                <p class="text-black-50">Sales Manager at NetProvider</p>
+                <p>Sales Manager at NetProvider</p>
               </div>
             </div>
           </div>
@@ -455,7 +468,7 @@
                 <a href="#pricing" class="text-secondary text-decoration-none"
                   >Purchased Coding Services</a
                 >
-                <p class="text-black-50">Manager at High Stakes</p>
+                <p>Manager at High Stakes</p>
               </div>
             </div>
           </div>
@@ -472,13 +485,13 @@
                 <h3 class="card-title">Jessica Hernandez</h3>
                 <p class="card-text">
                   "He is willing to listen to others and understand their point
-                  of view, which is highly appreciated. He works FOR the best of
-                  the team and not to BE the best of the team."
+                  of view. He works FOR the best of the team and not to BE the
+                  best of the team."
                 </p>
-                <a href="#pricing" class="text-secondary text-decoration-none"
+                <a href="#pricing" class="text-decoration-none"
                   >Purchased Technical Support</a
                 >
-                <p class="text-black-50">Senior Developer at TechCorp</p>
+                <p>Senior Developer at TechCorp</p>
               </div>
             </div>
           </div>
@@ -486,8 +499,8 @@
       </section>
 
       <!--Contact Us-->
-      <section class="section-5" id="contact">
-        <div class="container shadow-lg" data-aos="fade">
+      <section class="section-6" id="contact">
+        <div class="container" data-aos="fade">
           <div class="content">
             <div class="left-side">
               <div class="address details row-col-md-6">
@@ -538,7 +551,7 @@
 
     <!--Top Button-->
     <a href="#" class="top animation" id="topBtn"
-      ><span class="animation"><i class="bi bi-arrow-bar-up"> </i></span
+      ><span class="animation"><i class="bi bi-arrow-bar-up"></i></span
     ></a>
 
     <!--Footer-->
@@ -623,8 +636,6 @@
     <script src="./assets/js/bootstrap.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/main.js"></script>
-    <!--FontAwesome Bundle-->
-    <script src="./assets/js/fontawesome.js"></script>
 
     <!--Loading Screen-->
     <script>

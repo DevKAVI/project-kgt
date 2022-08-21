@@ -8,15 +8,59 @@ if (history.scrollRestoration) {
 }
 
 // Sticky Navigation Function
-let navbar = $(".navbar");
+let navbar = document.getElementById("navbar-home");
 
 $(window).scroll(function () {
   // Get the complete hight of window
   let oTop = $(".nav-view").offset().top - window.innerHeight;
   if ($(window).scrollTop() > oTop) {
-    navbar.addClass("sticky");
+    navbar.classList.remove("sticky-remove");
+    navbar.classList.add("sticky-add");
   } else {
-    navbar.removeClass("sticky");
+    navbar.classList.replace("sticky-add", "sticky-remove");
+  }
+});
+
+//Light + Dark Mode
+const toggle = document.getElementById("toggle");
+let mode = document.getElementById("html");
+let icon = document.getElementById("ball");
+let darkMode = localStorage.getItem("darkMode");
+
+const enableDarkMode = () => {
+  if (mode.classList.contains("light")) {
+    mode.classList.remove("light");
+    mode.classList.add("dark");
+
+    icon.classList.remove("bi-sun-fill");
+    icon.classList.add("bi-moon-fill");
+
+    localStorage.setItem("darkMode", "enabled");
+  }
+};
+
+const disableDarkMode = () => {
+  if (mode.classList.contains("dark")) {
+    mode.classList.remove("dark");
+    mode.classList.add("light");
+
+    icon.classList.remove("bi-moon-fill");
+    icon.classList.add("bi-sun-fill");
+
+    localStorage.setItem("darkMode", null);
+  }
+};
+
+if (darkMode === "enabled") {
+  enableDarkMode();
+}
+
+toggle.addEventListener("change", () => {
+  darkMode = localStorage.getItem("darkMode");
+  if (darkMode !== "enabled") {
+    enableDarkMode();
+  } else {
+    disableDarkMode();
   }
 });
 
