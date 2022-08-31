@@ -20,6 +20,10 @@
   .mode-toggle {
     padding-right: 1rem;
   }
+
+  footer .container-fluid .row {
+    justify-content: unset !important;
+  }
 }
 
 /** screen size 991px **/

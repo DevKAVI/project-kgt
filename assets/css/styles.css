@@ -61,7 +61,7 @@ section {
 
   /*Black*/
   --black: #000;
-  --alpha-black: rgba(0, 0, 0, 0.815);
+  --alpha-black: rgba(0, 0, 0, 0.92);
 
   /*Gray*/
   --solid-gray: #e5e5e5;
@@ -304,12 +304,12 @@ header .sticky {
 
 .sticky-add {
   background: var(--alpha-black);
-  transition: all 200ms ease;
+  transition: all 350ms ease;
 }
 
 .sticky-remove {
   background: none;
-  transition: all 200ms ease;
+  transition: all 350ms ease;
 }
 
 header a {
